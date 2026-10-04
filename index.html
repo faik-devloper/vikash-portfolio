@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a0a0d">
+<title>Vikash Babu — Diploma Student (EEE)</title>
+<meta name="description" content="Personal biodata and portfolio of Vikash Babu (Royal Vikash), Diploma (Polytechnic) student in Electrical and Electronics Engineering (EEE) from Gudur, Andhra Pradesh.">
+
+<!-- Favicon (inline, so no extra file and no 404 error) -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a0a0d'/><text x='50' y='68' font-size='58' font-family='Arial' font-weight='bold' fill='%23e6394e' text-anchor='middle'>V</text></svg>">
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- PWA: app manifest + icon for "Add to home screen" -->
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+
+<!-- Reveal animations. The class is added inline (before first paint) so the
+     page never flashes; if the script is blocked the class is never added and
+     every element stays visible. -->
+<script>document.documentElement.classList.add('js-reveal');</script>
+<script src="js/animations.js" defer></script>
+</head>
+<body>
+
+<!-- Thin scroll-progress bar (fixed, non-interactive) -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ================= NAVBAR ================= -->
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="#home">Vikash</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-menu" id="navMenu">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#details">Details</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-primary btn-sm" href="#" data-placeholder download>Download Resume</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= 1. HERO ================= -->
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">Hello, I'm</p>
+      <h1>Vikash Babu</h1>
+      <p class="hero-role">Diploma (Polytechnic) Student <span class="dot">&bull;</span> EEE (Electrical &amp; Electronics Engineering)</p>
+      <p class="hero-intro">
+        Electrical and Electronics Engineering (EEE) student at Audisankara
+        College of Engineering and Technology (Autonomous), Gudur. My
+        strengths are teamwork, communication and a quick learning
+        ability, supported by basic computer, C programming and
+        electrical knowledge.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#details">View My Details</a>
+        <a class="btn btn-outline" href="#contact">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <!-- Vikash Babu's own photo. CSS crops it to a circle with object-fit:
+           cover, so this portrait image is never stretched or distorted. The
+           width/height match the real file and prevent layout shift. -->
+      <img src="assets/profile.jpg" alt="Profile photo of Vikash Babu" width="718" height="1477" fetchpriority="high">
+    </div>
+  </div>
+</section>
+<!-- ================= 2. ABOUT ================= -->
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="card about-card">
+      <p>
+        I am Vikash Babu, a Diploma (Polytechnic) student in Electrical and
+        Electronics Engineering (EEE) at Audisankara College of Engineering
+        and Technology (Autonomous), Gudur, Andhra Pradesh.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3. EDUCATION ================= -->
+<section id="education" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+
+    <div class="grid grid-2">
+
+      <article class="card">
+        <p class="card-tag">Currently Pursuing</p>
+        <h3>Diploma (Polytechnic) &mdash; Electrical and Electronics Engineering</h3>
+        <p class="card-meta">Audisankara College of Engineering and Technology (Autonomous)</p>
+        <p class="card-desc">Branch: EEE (Electrical and Electronics Engineering)</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+<!-- ================= 4. SKILLS ================= -->
+<section id="skills" class="section">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+
+    <!-- Skills: add or remove one <article class="card skill-card"> per skill.
+         Short, neutral wording only — no "expert" / "professional" claims. -->
+    <div class="grid skill-grid">
+
+      <article class="card skill-card"><h3>Computer Knowledge</h3><p>Basic computer knowledge.</p></article>
+      <article class="card skill-card"><h3>MS Word &amp; MS Excel</h3><p>Basic document and spreadsheet work.</p></article>
+      <article class="card skill-card"><h3>C Programming</h3><p>Basic C programming knowledge.</p></article>
+      <article class="card skill-card"><h3>Electrical Wiring</h3><p>Basic electrical wiring knowledge.</p></article>
+      <article class="card skill-card"><h3>Circuits</h3><p>Basic electrical and electronic circuit knowledge.</p></article>
+      <article class="card skill-card"><h3>Teamwork</h3><p>Teamwork and communication.</p></article>
+      <article class="card skill-card"><h3>Quick Learner</h3><p>Quick learner.</p></article>
+
+    </div>
+  </div>
+</section>
+<!-- ================= 5. PROJECTS ================= -->
+<section id="projects" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+
+    <p class="section-sub">Live projects will be listed here as they are completed.</p>
+
+    <!-- ============ PROJECT CARDS ============
+         Add one <article class="card project-card"> per real project:
+           • <h3>              = project name
+           • <p class="card-desc"> = short description
+           • <ul class="tech-list">  = technologies/tools (delete the whole
+                                  <ul> if you have no tech list for a project)
+           • Live Demo button  = add target="_blank" rel="noopener noreferrer"
+           • GitHub button     = only add if you have a real repo URL
+         Never link a project you have not actually built. -->
+
+    <div class="grid grid-3">
+
+      <article class="card project-card">
+        <h3>Projects coming soon</h3>
+        <p class="card-desc">No projects have been published yet. New work will be added here soon.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+<!-- ================= 5b. CERTIFICATES ================= -->
+<!-- Certificate images live in assets/certificates/ as certificate-1.jpg,
+     certificate-2.jpg and certificate-3.jpg. To swap one out, replace the
+     file and update its <img> src, alt text and figcaption. Nothing else
+     needs to change — the CSS already handles sizing and paper background.
+
+     These are Vikash Babu's own documents: the Secondary School Examination
+     (Class 10) provisional certificate, the mark sheet, and a Kushal Yuva
+     Program (KYP) certificate. -->
+
+<!-- CHANGE: to describe a different third document, edit the <img> alt text and
+     the <figcaption> for certificate-3.jpg below. Keep both in sync with the
+     scan, and keep the height/width attributes equal to the real pixel size of
+     the file so the browser reserves the right space before it loads. -->
+<section id="certificates" class="section">
+  <div class="container">
+    <h2 class="section-title">Certificates</h2>
+    <p class="section-sub">Scans of Vikash Babu's Secondary School Examination (Class 10) and Kushal Yuva Program documents.</p>
+
+    <div class="cert-grid">
+      <figure class="card cert-item">
+        <img src="assets/certificates/certificate-1.jpg" alt="Bihar School Examination Board provisional certificate for the Secondary School Examination 2024, issued to Vikash Kumar and placed in the Second Division" loading="lazy" width="1600" height="1152">
+        <figcaption>Provisional Certificate — Secondary School Examination 2024</figcaption>
+      </figure>
+
+      <figure class="card cert-item">
+        <img src="assets/certificates/certificate-2.jpg" alt="Bihar School Examination Board mark sheet for the Secondary School Examination 2024, showing Vikash Kumar's subject marks and an aggregate of 246 with a Second Division result" loading="lazy" width="1200" height="1600">
+        <figcaption>Mark Sheet — Secondary School Examination 2024</figcaption>
+      </figure>
+
+      <figure class="card cert-item">
+        <img src="assets/certificates/certificate-3.jpg" alt="Kushal Yuva Program certificate awarded to Vikash Kumar, son of Uday Saw, for passing on 27 August 2024 with 74.06% in BS-CIT Information Technology, 89.17% in BS-CLS Language Skills and 74.19% in BS-CSS Soft Skills, issued by the State Council for Vocational Training and Bihar Skill Development Mission, Government of Bihar" loading="lazy" width="916" height="1280">
+        <figcaption>Kushal Yuva Program (KYP) Certificate — August 2024</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<!-- ================= 6. PERSONAL DETAILS ================= -->
+<section id="details" class="section">
+  <div class="container">
+    <h2 class="section-title">Personal Details</h2>
+
+    <div class="card">
+      <dl class="details-list">
+        <div class="details-row">
+          <dt>Full Name</dt><dd>Vikash Babu</dd>
+        </div>
+        <div class="details-row">
+          <dt>Display Name</dt><dd>Royal Vikash</dd>
+        </div>
+        <div class="details-row">
+          <dt>Year of Birth</dt>
+          <dd>2008</dd>
+        </div>
+        <div class="details-row">
+          <dt>Course</dt><dd>Diploma (Polytechnic)</dd>
+        </div>
+        <div class="details-row">
+          <dt>Branch</dt><dd>EEE (Electrical and Electronics Engineering)</dd>
+        </div>
+        <div class="details-row">
+          <dt>College</dt><dd>Audisankara College of Engineering and Technology (Autonomous)</dd>
+        </div>
+        <div class="details-row">
+          <dt>Location</dt><dd>Gudur, Andhra Pradesh</dd>
+        </div>
+        <!-- Number confirmed by the owner, so it is published and linked as a
+             call link (+91 country code) as well as in the Contact section. -->
+        <div class="details-row">
+          <dt>Phone / WhatsApp</dt>
+          <dd><a href="tel:+919304009461">+91 93040 09461</a></dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+<!-- ================= 7. CONTACT ================= -->
+<section id="contact" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+
+    <!-- CHANGE: to add LinkedIn later, set href and remove data-placeholder -->
+    <!-- Icons are lightweight inline SVG (no icon library, no extra files).
+         Each icon is aria-hidden because the text next to it already
+         describes the contact type. -->
+    <div class="grid contact-grid">
+
+      <a class="card contact-card" href="mailto:vikashbabu7292@gmail.com">
+        <h3>Email</h3>
+        <p class="contact-line">
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+          <span class="contact-value">vikashbabu7292@gmail.com</span>
+        </p>
+      </a>
+
+      <!-- WhatsApp: confirm the country code; here it is +91 (India) and the
+           number matches the one shown in the Personal Details section. -->
+      <a class="card contact-card" href="https://wa.me/919304009461" target="_blank" rel="noopener noreferrer">
+        <h3>WhatsApp</h3>
+        <p class="contact-line">
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.548 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></svg>
+          <span class="contact-value">+91 93040 09461</span>
+        </p>
+      </a>
+
+      <div class="card contact-card contact-static">
+        <h3>Location</h3>
+        <p class="contact-line">
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="contact-value">Gudur, Andhra Pradesh</span>
+        </p>
+      </div>
+
+      <!-- CHANGE: to add GitHub later, set href to the real profile URL and
+           remove data-placeholder. No GitHub account was provided. -->
+      <a class="card contact-card" href="#" data-placeholder><h3>GitHub</h3><p class="pending">Not added yet</p></a>
+
+      <a class="card contact-card" href="#" data-placeholder><h3>LinkedIn</h3><p class="pending">Not added yet</p></a>
+
+      <a class="card contact-card" href="https://www.instagram.com/royal_vikash10k/" target="_blank" rel="noopener noreferrer">
+        <h3>Instagram</h3>
+        <p class="contact-line">
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          <span class="contact-value">@royal_vikash10k</span>
+        </p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 8. RESUME ================= -->
+<section id="resume" class="section">
+  <div class="container resume-box">
+    <h2 class="section-title">Resume</h2>
+    <p class="section-sub">A quick summary of my education and skills.</p>
+    <!-- CHANGE: point this to assets/resume/your-file.pdf and remove data-placeholder -->
+    <a class="btn btn-primary" href="#" data-placeholder download>Download Resume</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year">2026</span> Vikash Babu. All rights reserved.</p>
+    <p class="footer-sub">Gudur, Andhra Pradesh &nbsp;&bull;&nbsp; <a href="https://www.instagram.com/royal_vikash10k/" target="_blank" rel="noopener noreferrer">@royal_vikash10k</a></p>
+    <p class="footer-credit">Designed &amp; Developed by <span class="footer-credit-name">Kaif</span></p>
+  </div>
+</footer>
+
+<!-- Message shown when a not-yet-filled placeholder link is clicked -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- Back to top (hidden until you scroll down) -->
+<button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

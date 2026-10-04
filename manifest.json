@@ -1,0 +1,35 @@
+{
+  "name": "Vikash Babu",
+  "short_name": "Vikash",
+  "description": "Personal biodata and portfolio of Vikash Babu (Royal Vikash), Diploma (Polytechnic) student in Electrical and Electronics Engineering (EEE) from Gudur, Andhra Pradesh.",
+  "start_url": "./",
+  "scope": "./",
+  "id": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0a0a0d",
+  "theme_color": "#0a0a0d",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["portfolio", "personal"],
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
